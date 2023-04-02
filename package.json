@@ -1,5 +1,5 @@
 {
-  "name": "personal",
+  "name": "@lexedwards/personal",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -10,16 +10,19 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "test": "turbo run test",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,mdx,json}\"",
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "eslint-config-custom": "workspace:*",
-    "prettier": "latest",
-    "turbo": "latest"
+    "prettier": "^2.8.4",
+    "turbo": "^1.8.3",
+    "typescript": "^5.0.2"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   },
-  "dependencies": {},
-  "packageManager": "pnpm@7.13.4"
+  "packageManager": "pnpm@8.1.0"
 }

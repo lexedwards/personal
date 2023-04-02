@@ -1,5 +1,8 @@
 {
   "extends": "tsconfig/react-library.json",
-  "include": ["."],
+  "compilerOptions": {
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  },
+  "include": [".", ".stylelintrc.js"],
   "exclude": ["dist", "build", "node_modules"]
 }

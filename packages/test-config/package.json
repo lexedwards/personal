@@ -1,0 +1,10 @@
+{
+  "name": "test-config",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Alex Edwards <alex@alexedwards.co> (https://alexedwards.co/)",
+  "dependencies": {
+    "@swc/core": "^1.3.44",
+    "@swc/jest": "^0.2.24"
+  }
+}
